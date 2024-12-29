@@ -1,0 +1,59 @@
+html, body {
+    height: 100%; /* Zapewnij, ¿e ca³y dokument ma 100% wysokoœci */
+    margin: 0; /* Usuñ marginesy */
+    overflow-x: hidden; /* Ukryj tylko poziomy scrollbar */
+}
+
+body {
+    display: flex;
+    flex-direction: row; /* Pasek boczny i treœæ obok siebie */
+    background-color: #11171e;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    flex-grow: 1; /* Zajmij dostêpn¹ przestrzeñ, aby footer by³ na dole */
+    overflow-y: auto; /* Dodaj przewijanie, jeœli treœæ jest za d³uga */
+}
+
+/* Stopka */
+footer {
+    background-color: transparent; /* Usuniêcie t³a */
+    color: #fff; /* Kolor tekstu */
+    padding: 10px 0; /* Dystans wewnêtrzny w stopce */
+    text-align: center; /* Wyœrodkowanie tekstu */
+    width: 100%; /* Stopka ma pe³n¹ szerokoœæ kontenera */
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Wyrównanie do lewej */
+}
+
+/* Nawigacja */
+.custom-navbar {
+    background-color: #1e252b;
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
+/* Styl œrodkowania elementów */
+.center-content {
+    display: flex; /* Aktywacja Flexbox */
+    justify-content: center; /* Wyœrodkowanie poziome */
+    align-items: center; /* Wyœrodkowanie pionowe */
+    height: 100%; /* Wysokoœæ kontenera */
+}
+
+/* Dodatkowe stylowanie paska bocznego i treœci */
+.d-flex {
+    display: flex;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* Ustawienie elementu "zalogowany jako" na dole paska bocznego */
+.mt-auto {
+    margin-top: auto; /* Wyrównuje element na dole */
+}

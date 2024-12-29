@@ -1,0 +1,77 @@
+﻿@model SmartFlow.Models.Category
+
+@{
+    ViewData["Title"] = "Edytuj";
+    ViewData["PageTitle"] = "Edytuj kategorię";
+}
+
+<h2 class="text-white mb-4">@ViewData["PageTitle"]</h2>
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Edit" method="post" class="bg-dark text-white p-4 rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" asp-for="CategoryId" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Icon" class="control-label"></label>
+                <div class="d-flex flex-wrap gap-3">
+                    <input type="hidden" id="iconInput" name="Icon" value="@Model.Icon" />
+
+                    <!-- Ikony -->
+                    <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-plane">
+                        <i class="fa-solid fa-plane"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-shop">
+                        <i class="fa-solid fa-shop"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-briefcase">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-utensils">
+                        <i class="fa-solid fa-utensils"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-car">
+                        <i class="fa-solid fa-car"></i>
+                    </button>
+                </div>
+                <span asp-validation-for="Icon" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4 text-end">
+                <button type="submit" class="btn btn-success">Zapisz</button>
+                <a asp-action="Index" class="btn btn-secondary ms-2">Powrót</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const iconButtons = document.querySelectorAll(".icon-btn");
+            const iconInput = document.getElementById("iconInput");
+
+            // Zaznaczenie ikony po kliknięciu
+            iconButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
+                    this.classList.add("btn-primary");
+                    iconInput.value = this.dataset.icon;
+                });
+            });
+
+            // Ustawienie aktywnej ikony, jeśli już wybrana
+            const currentIcon = iconInput.value;
+            if (currentIcon) {
+                const activeButton = [...iconButtons].find(btn => btn.dataset.icon === currentIcon);
+                if (activeButton) activeButton.classList.add("btn-primary");
+            }
+        });
+    </script>
+}

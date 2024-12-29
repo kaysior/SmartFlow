@@ -1,0 +1,43 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4 bg-dark text-white" style="width: 400px;">
+        <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="Input.Email" class="form-label">Email</label>
+                <input asp-for="Input.Email" class="form-control" placeholder="Enter your email" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Input.Password" class="form-label">Password</label>
+                <input asp-for="Input.Password" type="password" class="form-control" placeholder="Enter your password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-check mb-3">
+                <input asp-for="Input.RememberMe" class="form-check-input" />
+                <label asp-for="Input.RememberMe" class="form-check-label">Remember me</label>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </div>
+            <div class="text-center mt-3">
+                <p>
+                    Don't have an account? <a asp-page="./Register" class="text-info">Register here</a>
+                </p>
+                <p>
+                    Forgot your password? <a asp-page="./ForgotPassword" class="text-info">Reset it</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,121 @@
+﻿@model SmartFlow.Models.Transaction
+
+<h2>Stwórz Transakcję</h2>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Wybór kategorii za pomocą przycisków -->
+            <div class="form-group mb-3">
+                <label for="CategoryId">Kategoria</label>
+                <div class="d-flex flex-wrap gap-3">
+                    @foreach (var category in ViewBag.CategoryTitleWithIcon as List<SelectListItem>)
+                    {
+                        <button type="button" class="btn btn-outline-secondary icon-btn"
+                                data-category-id="@category.Value" data-category-name="@category.Text">
+                            @Html.Raw(category.Text)
+                        </button>
+                    }
+                </div>
+                <input type="hidden" id="CategoryId" name="CategoryId" value="@Model.CategoryId" />
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <!-- Pole wyboru celu oszczędnościowego -->
+            <div class="form-group mb-3" id="SavingsGoalSection" style="display: none;">
+                <label for="SavingsGoalId">Cel Oszczędności</label>
+                <select id="SavingsGoalId" name="SavingsGoalId" asp-for="SavingsGoalId" asp-items="ViewBag.SavingsGoalsNames" class="form-control">
+                    <option value="">Wybierz cel oszczędności</option>
+                </select>
+                <span asp-validation-for="SavingsGoalId" class="text-danger"></span>
+            </div>
+
+            <!-- Pole dla kwoty -->
+            <div class="form-group mb-3">
+                <label for="Amount">Kwota</label>
+                <input id="Amount" name="Amount" asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <!-- Pole dla notatki -->
+            <div class="form-group mb-3">
+                <label for="Note">Notatka</label>
+                <input id="Note" name="Note" asp-for="Note" class="form-control" />
+                <span asp-validation-for="Note" class="text-danger"></span>
+            </div>
+
+            <!-- Pole dla daty -->
+            <div class="form-group mb-3">
+                <label for="Date">Data</label>
+                <input id="Date" name="Date" asp-for="Date" type="datetime-local" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+
+            <!-- Typ (Income/Expense) -->
+            <div class="btn-group mb-3 w-100" role="group" aria-label="Type">
+                <input type="radio" class="btn-check" name="Type" id="income" value="Income"
+                @(Model.Type == "Income" ? "checked" : "")>
+                <label class="btn btn-outline-light w-50" for="income">Przychód</label>
+
+                <input type="radio" class="btn-check" name="Type" id="expense" value="Expense"
+                @(Model.Type == "Expense" ? "checked" : "")>
+                <label class="btn btn-outline-light w-50" for="expense">Wydatek</label>
+            </div>
+
+            <!-- Przycisk Zatwierdź -->
+            <div class="form-group">
+                <input type="submit" value="Stwórz" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const iconButtons = document.querySelectorAll(".icon-btn");
+            const categoryIdInput = document.getElementById("CategoryId");
+            const savingsGoalSection = document.getElementById("SavingsGoalSection");
+
+            // Funkcja do obsługi kliknięcia przycisków kategorii
+            iconButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    // Zaznacz wybrany przycisk
+                    iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
+                    this.classList.add("btn-primary");
+
+                    // Ustaw wartość ukrytego pola CategoryId
+                    const categoryId = this.dataset.categoryId;
+                    const categoryName = this.dataset.categoryName.toLowerCase();
+
+                    categoryIdInput.value = categoryId;
+
+                    // Jeśli wybrano kategorię "Oszczędności", pokaż pole celu oszczędnościowego
+                    if (categoryName.includes("oszczednosci")) {
+                        savingsGoalSection.style.display = "block";
+                    } else {
+                        savingsGoalSection.style.display = "none";
+                        const savingsGoalSelect = document.getElementById("SavingsGoalId");
+                        if (savingsGoalSelect) savingsGoalSelect.value = ""; // Resetuj wartość
+                    }
+                });
+            });
+
+            // Sprawdzenie początkowego stanu (np. przy edycji)
+            const initialCategoryId = categoryIdInput.value;
+            if (initialCategoryId) {
+                const activeButton = [...iconButtons].find(btn => btn.dataset.categoryId === initialCategoryId);
+                if (activeButton) {
+                    activeButton.classList.add("btn-primary");
+
+                    const categoryName = activeButton.dataset.categoryName.toLowerCase();
+                    if (categoryName.includes("oszczednosci")) {
+                        savingsGoalSection.style.display = "block";
+                    }
+                }
+            }
+        });
+    </script>
+}

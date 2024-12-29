@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartFlow", "SmartFlow.csproj", "{42A286C4-A2FD-489E-9DBA-A1C731124939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42A286C4-A2FD-489E-9DBA-A1C731124939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A286C4-A2FD-489E-9DBA-A1C731124939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A286C4-A2FD-489E-9DBA-A1C731124939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A286C4-A2FD-489E-9DBA-A1C731124939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E977BC6-C04F-4EEA-BB17-EE2ADDEAFEE2}
+	EndGlobalSection
+EndGlobal

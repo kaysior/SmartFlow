@@ -1,0 +1,70 @@
+﻿@model IEnumerable<SmartFlow.Models.SavingsGoal>
+
+@{
+    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Cele oszczędnościowe";
+    ViewData["PageAction"] = "Nowy cel oszczędnościowy";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="text-white">@ViewData["PageTitle"]</h2>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> @ViewData["PageAction"]
+    </a>
+</div>
+
+<table class="table table-dark table-borderless table-hover align-middle">
+    <thead>
+        <tr class="text-center">
+            <th>
+                @Html.DisplayNameFor(model => model.GoalName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TargetAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TargetDate)
+            </th>
+            <th>Akcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="text-center">
+                <td>
+                    @Html.DisplayFor(modelItem => item.GoalName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TargetAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TargetDate)
+                </td>
+                <td>
+                    <div class="d-flex justify-content-center gap-2">
+                        <!-- Edytuj -->
+                        <a asp-action="Edit" asp-route-id="@item.Id"
+                           class="btn btn-sm btn-outline-primary" title="Edit">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+
+                        <!-- Usuń -->
+                        <form asp-action="Delete" asp-route-id="@item.Id"
+                              onsubmit="return confirm('Na pewno chcesz usunąć ten cel oszczędnościowy?');"
+                              class="d-inline">
+                            <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

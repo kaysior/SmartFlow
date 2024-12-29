@@ -1,0 +1,84 @@
+﻿@model SmartFlow.Models.Category
+
+@{
+    ViewData["Title"] = "Stwórz";
+    ViewData["PageTitle"] = "Stwórz nową kategorię";
+}
+
+<h2 class="text-white mb-4">@ViewData["PageTitle"]</h2>
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="rounded-4 p-5" style="background-color: #1a222b;">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
+                <div class="mb-3">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Icon" class="control-label"></label>
+                    <div class="d-flex flex-wrap gap-3">
+                        <input type="hidden" id="iconInput" name="Icon" value="@Model.Icon" />
+
+                        <!-- Ikony -->
+                        <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-plane">
+                            <i class="fa-solid fa-plane"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-shop">
+                            <i class="fa-solid fa-gas-pump"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-briefcase">
+                            <i class="fa-solid fa-store"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-briefcase">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-briefcase">
+                            <i class="fa-solid fa-utensils"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light icon-btn" data-icon="fa-solid fa-briefcase">
+                            <i class="fa-solid fa-car"></i>
+                        </button>
+                    </div>
+                    <span asp-validation-for="Icon" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Stwórz" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary ms-2">Powrót</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @* Załączenie skryptu jQuery (jeśli jeszcze nie jest załączony) *@
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @* Załączenie skryptu FontAwesome *@
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const iconButtons = document.querySelectorAll(".icon-btn");
+            const iconInput = document.getElementById("iconInput");
+
+            iconButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
+                    this.classList.add("btn-primary");
+                    iconInput.value = this.dataset.icon;
+                });
+            });
+
+            // Zaznaczenie domyślnej ikony (jeśli istnieje)
+            const currentIcon = iconInput.value;
+            if (currentIcon) {
+                const activeButton = [...iconButtons].find(btn => btn.dataset.icon === currentIcon);
+                if (activeButton) activeButton.classList.add("btn-primary");
+            }
+        });
+    </script>
+}

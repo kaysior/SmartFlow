@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Panel";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="text-white">@ViewData["PageTitle"]</h2>
+</div>
+<hr />
+<div class="row justify-content-center">
+    <!-- Income Card -->
+    <div class="col-md-4">
+        <div class="card mb-3" style="height: 150px; width: 275px; background-color: #161e27;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Przychód</h5>
+                <hr />
+                <h1 class="text-center">@ViewBag.TotalIncome</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expense Card -->
+    <div class="col-md-4">
+        <div class="card mb-3" style="height: 150px; width: 275px; background-color: #161e27;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Wydatek</h5>
+                <hr />
+                <h1 class="text-center">@ViewBag.TotalExpense</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Balance Card -->
+    <div class="col-md-4">
+        <div class="card mb-3" style="height: 150px; width: 275px; background-color: #161e27;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Balans</h5>
+                <hr />
+                <h1 class="text-center">@ViewBag.Balance</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <!-- Recent Transactions Table -->
+    <div class="col-md-7">
+        <h3 class="text-center text-light">Transakcje</h3>
+        <table class="table table-dark table-borderless table-hover">
+            <thead>
+                <tr>
+                    <th>Kategoria</th>
+                    <th>Data</th>
+                    <th>Kwota</th>
+                    <th>Notatka</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var item in @ViewBag.RecentTransactions)
+                {
+                    string symbol = "";
+                    <tr>
+                        <td>
+                            <i class="@item.Category.Icon"></i> @item.Category.Title
+                        </td>
+                        <td>@item.Date</td>
+                        <td>
+                            @if (@item.Type == "Income")
+                            {
+                                symbol = "+";
+                            }
+                            else
+                            {
+                                symbol = "-";
+                            }
+                            @symbol @item.Amount
+                        </td>
+                        <td>@item.Note</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <!-- Savings Goals Table -->
+    <div class="col-md-7">
+        <h3 class="text-center text-light">Cele oszczędnościowe</h3>
+        <table class="table table-dark table-borderless table-hover">
+            <thead>
+                <tr>
+                    <th>Nazwa celu oszczędnościowego</th>
+                    <th>Docelowa kwota</th>
+                    <th>Aktualna kwota</th>
+                    <th>Docelowa data</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var goal in @ViewBag.SavingsGoals)
+                {
+                    <tr>
+                        <td>@goal.GoalName</td>
+                        <td>@goal.TargetAmount.ToString("C0")</td>
+                        <td>@goal.CurrentAmount.ToString("C0")</td>
+                        <td>@goal.TargetDate.ToShortDateString()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

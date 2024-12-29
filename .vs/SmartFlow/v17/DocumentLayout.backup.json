@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\transactions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\transactions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\transactions\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\transactions\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\transactions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\transactions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\transactions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\transactions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\savingsgoals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\savingsgoals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\controllers\\savingsgoalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:controllers\\savingsgoalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\models\\savingsgoal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:models\\savingsgoal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\savingsgoals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\savingsgoals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\savingsgoals\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\savingsgoals\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\savingsgoals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\savingsgoals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\views\\transactions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:views\\transactions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\data\\migrations\\20241228170214_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:data\\migrations\\20241228170214_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\data\\migrations\\20241228172002_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:data\\migrations\\20241228172002_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\data\\migrations\\20241228171012_initiall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:data\\migrations\\20241228171012_initiall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kamil\\Desktop\\SmartFlow\\Data\\Migrations\\20241217223602_Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kamil\\Desktop\\SmartFlow\\Data\\Migrations\\20241218100314_AddSavingsGoals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\data\\migrations\\20241229150750_test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:data\\migrations\\20241229150750_test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|c:\\users\\kamil\\desktop\\smartflow latest\\smartflow\\data\\migrations\\20241229164047_hugetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A286C4-A2FD-489E-9DBA-A1C731124939}|SmartFlow.csproj|solutionrelative:data\\migrations\\20241229164047_hugetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T22:48:17.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T23:07:37.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T22:30:39.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T17:03:45.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T22:29:28.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T09:57:26.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transactions\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Transactions\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T23:01:42.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transactions\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Details.cshtml",
+              "RelativeToolTip": "Views\\Transactions\\Details.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T23:06:25.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transactions\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Create.cshtml",
+              "RelativeToolTip": "Views\\Transactions\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T22:52:58.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SavingsGoals\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Index.cshtml",
+              "RelativeToolTip": "Views\\SavingsGoals\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T10:04:17.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transactions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Index.cshtml",
+              "RelativeToolTip": "Views\\Transactions\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T22:29:53.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T10:55:42.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T23:17:28.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SavingsGoal.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Models\\SavingsGoal.cs",
+              "RelativeDocumentMoniker": "Models\\SavingsGoal.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Models\\SavingsGoal.cs",
+              "RelativeToolTip": "Models\\SavingsGoal.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T10:00:15.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Models\\Transaction.cs",
+              "RelativeToolTip": "Models\\Transaction.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T22:48:00.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SavingsGoalsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\SavingsGoalsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SavingsGoalsController.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Controllers\\SavingsGoalsController.cs",
+              "RelativeToolTip": "Controllers\\SavingsGoalsController.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAQwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T10:01:24.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20241229164047_HugeTest.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241229164047_HugeTest.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20241229164047_HugeTest.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241229164047_HugeTest.cs",
+              "RelativeToolTip": "Data\\Migrations\\20241229164047_HugeTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T16:40:47.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20241229150750_Test2.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241229150750_Test2.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20241229150750_Test2.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241229150750_Test2.cs",
+              "RelativeToolTip": "Data\\Migrations\\20241229150750_Test2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T15:07:50.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_SideBar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T09:10:27.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T09:12:21.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\SavingsGoals\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Create.cshtml",
+              "RelativeToolTip": "Views\\SavingsGoals\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T17:44:43.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T22:30:32.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\SavingsGoals\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Edit.cshtml",
+              "RelativeToolTip": "Views\\SavingsGoals\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T17:45:05.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-18T09:10:15.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transactions\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Transactions\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Transactions\\Delete.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T17:43:29.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Delete.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T17:44:24.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\SavingsGoals\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Views\\SavingsGoals\\Delete.cshtml",
+              "RelativeToolTip": "Views\\SavingsGoals\\Delete.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T17:44:58.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20241228170214_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241228170214_Initial.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20241228170214_Initial.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241228170214_Initial.cs",
+              "RelativeToolTip": "Data\\Migrations\\20241228170214_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T17:02:14.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T17:05:15.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20241228172002_Test.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241228172002_Test.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20241228172002_Test.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241228172002_Test.cs",
+              "RelativeToolTip": "Data\\Migrations\\20241228172002_Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T17:20:02.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20241228171012_Initiall.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241228171012_Initiall.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20241228171012_Initiall.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow LATEST\\SmartFlow\\Data\\Migrations\\20241228171012_Initiall.cs",
+              "RelativeToolTip": "Data\\Migrations\\20241228171012_Initiall.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T17:10:12.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20241217223602_Test.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow\\Data\\Migrations\\20241217223602_Test.cs",
+              "RelativeDocumentMoniker": "..\\..\\SmartFlow\\Data\\Migrations\\20241217223602_Test.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow\\Data\\Migrations\\20241217223602_Test.cs",
+              "RelativeToolTip": "..\\..\\SmartFlow\\Data\\Migrations\\20241217223602_Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T22:36:03.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20241218100314_AddSavingsGoals.cs",
+              "DocumentMoniker": "C:\\Users\\Kamil\\Desktop\\SmartFlow\\Data\\Migrations\\20241218100314_AddSavingsGoals.cs",
+              "RelativeDocumentMoniker": "..\\..\\SmartFlow\\Data\\Migrations\\20241218100314_AddSavingsGoals.cs",
+              "ToolTip": "C:\\Users\\Kamil\\Desktop\\SmartFlow\\Data\\Migrations\\20241218100314_AddSavingsGoals.cs",
+              "RelativeToolTip": "..\\..\\SmartFlow\\Data\\Migrations\\20241218100314_AddSavingsGoals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T10:03:14.927Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<SmartFlow.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Kategorie";
+    ViewData["PageAction"] = "Nowa kategoria";
+    int num = 1;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="text-white">@ViewData["PageTitle"]</h2>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> @ViewData["PageAction"]
+    </a>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <table class="table table-dark table-borderless table-hover align-middle">
+            <thead>
+                <tr class="text-center">
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        Nazwa kategorii
+                    </th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">
+                            @num
+                        </td>
+                        <td class="text-center">
+                            <i class="@item.Icon"></i> @item.Title
+                        </td>
+                        <td class="text-center">
+                            <div class="d-flex justify-content-center gap-2">
+                                <!-- Edytuj -->
+                                <a asp-action="Edit" asp-route-id="@item.CategoryId"
+                                   class="btn btn-sm btn-outline-primary" title="Edit">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </a>
+
+                                <!-- Usuń -->
+                                <form asp-action="Delete" asp-route-id="@item.CategoryId"
+                                      onsubmit="return confirm('Na pewno chcesz usunąć tę transakcję?')"
+                                      class="d-inline">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    num++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

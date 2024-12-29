@@ -1,0 +1,126 @@
+﻿@model SmartFlow.Models.Transaction
+
+@{
+    ViewData["Title"] = "Edytuj";
+    ViewData["PageTitle"] = "Edytuj transakcję";
+}
+
+<h2 class="text-white mb-4">@ViewData["PageTitle"]</h2>
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Edit" method="post" class="bg-dark text-white p-4 rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" id="selectedCategoryId" name="CategoryId" value="@Model.CategoryId" />
+
+            <!-- Lista Kategorii z ikonami -->
+            <div class="form-group mb-3">
+                <label class="form-label">Kategoria</label>
+                <div class="d-flex flex-wrap gap-3">
+                    @foreach (var category in ViewData["CategoryTitleWithIcon"] as List<SelectListItem>)
+                    {
+                        <button type="button" class="btn btn-outline-light icon-btn"
+                                data-category-id="@category.Value"
+                        @(category.Value == Model.CategoryId.ToString() ? "btn-primary" : "")>
+                            @Html.Raw(category.Text)
+                        </button>
+                    }
+                </div>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <!-- Kwota -->
+            <div class="form-group mb-3">
+                <label asp-for="Amount" class="form-label">Kwota</label>
+                <input asp-for="Amount" class="form-control" min="0" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <!-- Notatka -->
+            <div class="form-group mb-3">
+                <label asp-for="Note" class="form-label">Notatka</label>
+                <input asp-for="Note" class="form-control" required />
+                <span asp-validation-for="Note" class="text-danger"></span>
+            </div>
+
+            <!-- Data -->
+            <div class="form-group mb-3">
+                <label asp-for="Date" class="form-label">Data</label>
+                <input asp-for="Date" type="datetime-local"
+                       value="@Model.Date.ToString("yyyy-MM-ddTHH:mm")" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+
+            <!-- Typ (Income/Expense) -->
+            <div class="btn-group mb-3 w-100" role="group" aria-label="Type">
+                <input type="radio" class="btn-check" name="Type" id="income" value="Income"
+                @(Model.Type == "Income" ? "checked" : "")>
+                <label class="btn btn-outline-light w-50" for="income">Przychód</label>
+
+                <input type="radio" class="btn-check" name="Type" id="expense" value="Expense"
+                @(Model.Type == "Expense" ? "checked" : "")>
+                <label class="btn btn-outline-light w-50" for="expense">Wydatek</label>
+            </div>
+
+            <!-- Cel oszczędnościowy -->
+            <div id="savingsGoalContainer" class="form-group mb-3" style="display: none;">
+                <label class="form-label">Cel oszczędnościowy</label>
+                <select asp-for="SavingsGoalId" class="form-control">
+                    <option value="">-- Wybierz cel oszczędnościowy --</option>
+                    @foreach (var goal in ViewData["SavingsGoalList"] as List<SelectListItem>)
+                    {
+                        <option value="@goal.Value" selected="@(goal.Value == Model.SavingsGoalId.ToString() ? "selected" : null)">@goal.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="SavingsGoalId" class="text-danger"></span>
+            </div>
+
+
+            <!-- Przycisk zapisu -->
+            <div class="form-group mt-4 text-end">
+                <button type="submit" class="btn btn-success">Zapisz</button>
+                <a asp-action="Index" class="btn btn-secondary ms-2">Powrót</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const iconButtons = document.querySelectorAll(".icon-btn");
+            const hiddenInput = document.getElementById("selectedCategoryId");
+            const savingsGoalContainer = document.getElementById("savingsGoalContainer");
+
+            // Obsługa wyboru kategorii
+            iconButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
+                    this.classList.add("btn-primary");
+                    hiddenInput.value = this.dataset.categoryId;
+
+                    // Pokaż/ukryj cel oszczędnościowy
+                    if (this.textContent.includes("Oszczednosci")) {
+                        savingsGoalContainer.style.display = "block";
+                    } else {
+                        savingsGoalContainer.style.display = "none";
+                    }
+                });
+            });
+
+            // Ustawienie wybranego celu oszczędnościowego przy edycji
+            const currentCategoryId = hiddenInput.value;
+            if (currentCategoryId) {
+                const activeButton = [...iconButtons].find(btn => btn.dataset.categoryId === currentCategoryId);
+                if (activeButton) {
+                    activeButton.classList.add("btn-primary");
+                    if (activeButton.textContent.includes("Oszczednosci")) {
+                        savingsGoalContainer.style.display = "block";
+                    }
+                }
+            }
+        });
+    </script>
+}
