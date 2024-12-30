@@ -4,9 +4,9 @@ Po rozpakowaniu projektu proszę w pierwszej kolejności zobaczyć czy pakiety z
 - **Drop-Database**
 - **Update-Database**
 
-Poniżej znajduje się pełna dokumentacja techniczna projektu SmartFlow. Informacje wymienione powyżej znajdują się również w sekcji **Instrukcja pierwszego uruchomienia projektu**. Całość dokumentacji z rozszerzeniem .docx oraz .pdf jak i zrzutami ekranu użytymi w dokumentacji znajduje się w folderze **Documentation** w głównym katalogu projektu.
-
 Po uruchomieniu projektu w celu przetestowania jego pełnej funkcjonalności, proszę o dodanie kategorii **Oszczędności/Oszczednosci**, a następnie stworzenie transakcji z tą kategorią. Dla tej kategorii jest specjalnie utworzona logika, która pozwala tworzyć transakcje dla wcześniej utworzonych celów oszczędnościowych.
+
+Poniżej znajduje się pełna dokumentacja techniczna projektu SmartFlow. Informacje wymienione powyżej znajdują się również w sekcji **Instrukcja pierwszego uruchomienia projektu**. Całość dokumentacji z rozszerzeniem .docx oraz .pdf jak i zrzutami ekranu użytymi w dokumentacji znajduje się w folderze **Documentation** w głównym katalogu projektu.
 
 
 # Dokumentacja
@@ -66,9 +66,11 @@ SmartFlow - aplikacja internetowa stworzona w technologii ASP.NET Core 8.0 do pl
 
 2. Zainstaluj wymagane pakiety zależności (dependencies) w Visual Studio:
 
+![Obraz22](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/22.png)
+
 Prawym na pakiety oraz **Aktualizuj**
 
-
+![Obraz23](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/23.png)
    
 3. W terminalu uruchom polecenie:
 - **Update-Database**
