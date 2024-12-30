@@ -177,30 +177,48 @@ namespace SmartFlow.Controllers
                 var userId = GetUserId();
                 transaction.userId = userId;
 
-                _context.Update(transaction);
+                // Pobierz oryginalną transakcję z bazy
+                var originalTransaction = await _context.Transactions
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(t => t.Id == id && t.userId == userId);
 
-                if (transaction.SavingsGoalId.HasValue)
+                if (originalTransaction == null) return NotFound();
+
+                // Jeśli transakcja była powiązana z celem oszczędnościowym, zaktualizuj jego CurrentAmount
+                if (originalTransaction.SavingsGoalId.HasValue)
                 {
-                    var savingsGoal = await _context.SavingsGoal.FindAsync(transaction.SavingsGoalId.Value);
-                    if (savingsGoal != null)
+                    var originalSavingsGoal = await _context.SavingsGoal.FindAsync(originalTransaction.SavingsGoalId.Value);
+                    if (originalSavingsGoal != null)
                     {
-                        savingsGoal.CurrentAmount += transaction.Amount;
-                        _context.Update(savingsGoal);
+                        originalSavingsGoal.CurrentAmount -= originalTransaction.Amount;
+                        _context.Update(originalSavingsGoal);
                     }
                 }
 
+                // Zaktualizuj nową wartość CurrentAmount dla nowego lub tego samego celu oszczędnościowego
+                if (transaction.SavingsGoalId.HasValue)
+                {
+                    var newSavingsGoal = await _context.SavingsGoal.FindAsync(transaction.SavingsGoalId.Value);
+                    if (newSavingsGoal != null)
+                    {
+                        newSavingsGoal.CurrentAmount += transaction.Amount;
+                        _context.Update(newSavingsGoal);
+                    }
+                }
+
+                // Zapisz zmiany dla transakcji
+                _context.Update(transaction);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!_context.Transactions.Any(e => e.Id == transaction.Id))
-                {
-                    return NotFound();
-                }
+                if (!_context.Transactions.Any(e => e.Id == transaction.Id)) return NotFound();
                 throw;
             }
         }
+
 
         // GET: Transactions/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -222,12 +240,21 @@ namespace SmartFlow.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var transaction = await _context.Transactions.FindAsync(id);
-            if (transaction != null)
+            var transaction = await _context.Transactions
+                .Include(t => t.SavingsGoal)
+                .FirstOrDefaultAsync(t => t.Id == id);
+
+            if (transaction == null) return NotFound();
+
+            // Odejmij kwotę transakcji od CurrentAmount celu oszczędnościowego, jeśli istnieje
+            if (transaction.SavingsGoalId.HasValue && transaction.SavingsGoal != null)
             {
-                _context.Transactions.Remove(transaction);
-                await _context.SaveChangesAsync();
+                transaction.SavingsGoal.CurrentAmount -= transaction.Amount;
+                _context.Update(transaction.SavingsGoal);
             }
+
+            _context.Transactions.Remove(transaction);
+            await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }

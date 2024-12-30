@@ -12,22 +12,22 @@
         <div class="rounded-4 p-5" style="background-color: #1a222b;">
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="GoalName" class="control-label"></label>
                     <input asp-for="GoalName" class="form-control" />
                     <span asp-validation-for="GoalName" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="TargetAmount" class="control-label"></label>
                     <input asp-for="TargetAmount" class="form-control" />
                     <span asp-validation-for="TargetAmount" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="CurrentAmount" class="control-label"></label>
                     <input asp-for="CurrentAmount" class="form-control" />
                     <span asp-validation-for="CurrentAmount" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="TargetDate" class="control-label"></label>
                     <input asp-for="TargetDate" class="form-control" />
                     <span asp-validation-for="TargetDate" class="text-danger"></span>
