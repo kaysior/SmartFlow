@@ -6,6 +6,8 @@ Po rozpakowaniu projektu proszę w pierwszej kolejności zobaczyć czy pakiety z
 
 Poniżej znajduje się pełna dokumentacja techniczna projektu SmartFlow. Informacje wymienione powyżej znajdują się również w sekcji **Instrukcja pierwszego uruchomienia projektu**. Całość dokumentacji z rozszerzeniem .docx oraz .pdf jak i zrzutami ekranu użytymi w dokumentacji znajduje się w folderze **Documentation** w głównym katalogu projektu.
 
+Po uruchomieniu projektu w celu przetestowania jego pełnej funkcjonalności, proszę o dodanie kategorii **Oszczędności/Oszczednosci**, a następnie stworzenie transakcji z tą kategorią. Dla tej kategorii jest specjalnie utworzona logika, która pozwala tworzyć transakcje dla wcześniej utworzonych celów oszczędnościowych.
+
 
 # Dokumentacja
 
@@ -76,6 +78,8 @@ W przypadku gdy Update-Database wyrzuca błędy, np. "There is already an object
 - **Update-Database**
 
 4. Skompiluj projekt i uzyskaj dostęp do aplikacji.
+
+5. Po rejestracji i zalogowaniu, na sam początek utwórz kategorię **Oszczędności/Oszczednosci** w celu przetestowania pełnej funkcjonalności aplikacji. Następnie po stworzeniu celów oszczędnościowych proszę przejść do tworzenia transakcji z tą kategorią. Dla tej kategorii jest specjalnie utworzona logika, która pozwala tworzyć transakcje dla wcześniej utworzonych celów oszczędnościowych.
 
 
 
