@@ -167,96 +167,78 @@ Screeny z działania aplikacji
 
 Strona główna
 
- 
 ![Obraz1](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/1.png)
-
 
 Ekran rejestracji
 
-![Obraz2](Documentation\documentation_images/2.png)
-
+![Obraz2](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/2.png)
 
 Ekran logowania
  
-![Obraz3](Documentation\documentation_images/3.png)
-
+![Obraz3](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/3.png)
 
 Strona kategorii
 
-![Obraz4](Documentation\documentation_images/4.png)
+![Obraz4](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/4.png)
 
 Tworzenie kategorii
 
-![Obraz5](Documentation\documentation_images/5.png)
-
+![Obraz5](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/5.png)
 
 Edytowanie kategorii
 
-![Obraz6](Documentation\documentation_images/6.png)
+![Obraz6](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/6.png)
 
 Usuwanie kategorii
 
-![Obraz7](Documentation\documentation_images/7.png)
+![Obraz7](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/7.png)
 
 Strona transakcji
 
-![Obraz8](Documentation\documentation_images/8.png)
+![Obraz8](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/8.png)
 
 Dodawanie nowej transakcji (kategorie do wyboru są tylko te, które wcześniej stworzyliśmy)
 
-![Obraz9](Documentation\documentation_images/9.png)
-
+![Obraz9](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/9.png)
 
 Dodawanie transakcji oszczędnościowej wykorzystując kategorię ”Oszczednosci”
 
-![Obraz10](Documentation\documentation_images/10.png)
+![Obraz10](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/10.png)
+
+![Obraz11](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/11.png)
 
 Edytowanie transakcji
 
- 
-
-
+![Obraz12](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/12.png)
 
 Usuwanie transakcji
 
- 
-
-
+![Obraz13](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/13.png)
 
 Strona celów oszczędnościowych
 
- 
-
-
+![Obraz14](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/14.png)
 
 Dodanie nowej transakcji z kategorią “Oszczednosci” oraz wyborem celu oszczędnościowego “Wakacje”
 
- 
- 
+![Obraz15](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/15.png)
 
-
+![Obraz16](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/16.png)
 
 Edycja transakcji oszczędnościowej dla celu “Wakacje”
 
- 
+![Obraz17](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/17.png)
 
- 
-
+![Obraz18](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/18.png)
 
 Edytowanie celu oszczędnościowego
 
- 
-
-
-
-
-
+![Obraz19](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/19.png)
 
 Usuwanie celu oszczędnościowego
 
- 
-
+![Obraz20](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/20.png)
 
 Widok panelu
 
- 
+![Obraz21](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/21.png)
