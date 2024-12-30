@@ -1,8 +1,12 @@
 # SmartFlow
 
-Po rozpakowaniu projektu, w przypadku gdy Update-Database wyrzuca błędy, np. "There is already an object named 'AspNetRoles' in the database" albo inne, prosimy najpierw usunąć całą bazę danych, a następnie zaktualizować
-#### Drop-Database
-#### Update-Database
+Po rozpakowaniu projektu proszę w pierwszej kolejności zobaczyć czy pakiety zależności (dependencies) są zaktualizowane, a następnie uruchomić polecenie **Update-Database** w konsoli menadżera pakietów NuGet. Jeżeli po wpisaniu polecenia pojawiają się błędy, np. "There is already an object named 'AspNetRoles' in the database" albo inne, prosimy najpierw usunąć całą bazę danych, a następnie ponownie uruchomić te polecenie
+- **Drop-Database**
+- **Update-Database**
+
+Po uruchomieniu projektu w celu przetestowania jego pełnej funkcjonalności, proszę o dodanie kategorii **Oszczędności/Oszczednosci**, a następnie stworzenie transakcji z tą kategorią. Dla tej kategorii jest specjalnie utworzona logika, która pozwala tworzyć transakcje dla wcześniej utworzonych celów oszczędnościowych.
+
+Poniżej znajduje się pełna dokumentacja techniczna projektu SmartFlow. Informacje wymienione powyżej znajdują się również w sekcji **Instrukcja pierwszego uruchomienia projektu**. Całość dokumentacji z rozszerzeniem .docx oraz .pdf jak i zrzutami ekranu użytymi w dokumentacji znajduje się w folderze **Documentation** w głównym katalogu projektu.
 
 
 # Dokumentacja
@@ -54,23 +58,30 @@ SmartFlow - aplikacja internetowa stworzona w technologii ASP.NET Core 8.0 do pl
 
 
 
-## Instrukcje pierwszego uruchomienia projektu
+## Instrukcja pierwszego uruchomienia projektu
 
-1. Sklonuj repozytorium projektu za pomocą komendy 
-‘git clone git@github.com:kaysior/SmartFlow.git’  użytej w git bash
+1. Pobierz lub sklonuj repozytorium projektu:
+- Pobierz repozytorium jako archiwum .ZIP 
+- Sklonuj repozytorium, np. za pomocą SSH ‘git clone git@github.com:kaysior/SmartFlow.git’
 
 2. Zainstaluj wymagane pakiety zależności (dependencies) w Visual Studio:
 
-Prawym na pakiety oraz **”Aktualizuj”**
+![Obraz22](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/22.png)
+
+Prawym na pakiety oraz **Aktualizuj**
+
+![Obraz23](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/23.png)
    
 3. W terminalu uruchom polecenie:
-   **Update-Database**
+- **Update-Database**
 
 W przypadku gdy Update-Database wyrzuca błędy, np. "There is already an object named 'AspNetRoles' in the database" albo inne, prosimy najpierw usunąć całą bazę danych, a następnie ją zaktualizować
-**Drop-Database**
-**Update-Database**
+- **Drop-Database**
+- **Update-Database**
 
-4. Skompiluj projekt i zyskaj dostęp do aplikacji.
+4. Skompiluj projekt i uzyskaj dostęp do aplikacji.
+
+5. Po rejestracji i zalogowaniu, na sam początek utwórz kategorię **Oszczędności/Oszczednosci** w celu przetestowania pełnej funkcjonalności aplikacji. Następnie po stworzeniu celów oszczędnościowych proszę przejść do tworzenia transakcji z tą kategorią. Dla tej kategorii jest specjalnie utworzona logika, która pozwala tworzyć transakcje dla wcześniej utworzonych celów oszczędnościowych.
 
 
 
@@ -80,7 +91,7 @@ W przypadku gdy Update-Database wyrzuca błędy, np. "There is already an object
 
 1\. Category.cs
 
-- Opis: Reprezentuje kategorię wydatków użytkownika.
+- Opis: Reprezentuje kategorię wydatków oraz przychodów użytkownika.
 - Pola:  
   - \`Id\` (int): Klucz główny.
   - \`Name\` (string): Nazwa kategorii (maks. 100 znaków, wymagane).
@@ -89,68 +100,66 @@ W przypadku gdy Update-Database wyrzuca błędy, np. "There is already an object
 
 - Opis: Model opisujący pojedynczą transakcję finansową.
 - Pola:  
-
-- \`Id\` (int): Klucz główny.
-- \`Amount\` (decimal): Kwota transakcji (wymagane, > 0).
-- \`Date\` (DateTime): Data wykonania transakcji.
-- \`CategoryId\` (int): Klucz obcy powiązany z kategorią.
-- \`Note\` (string): Opis transakcji.
+   - \`Id\` (int): Klucz główny.
+   - \`Amount\` (decimal): Kwota transakcji (wymagane, > 0).
+   - \`Date\` (DateTime): Data wykonania transakcji.
+   - \`CategoryId\` (int): Klucz obcy powiązany z kategorią.
+   - \`Note\` (string): Opis transakcji.
 
 3\. SavingsGoal.cs
 
 - Opis: Przechowuje informacje o celach oszczędnościowych użytkownika.
 - Pola:  
-
-- \`Id\` (int): Klucz główny.
-- \`GoalName\` (string): Nazwa celu.
-- \`TargetAmount\` (decimal): Docelowa kwota oszczędności.
-- \`TargetDate\` (decimal): Docelowa kwota oszczędności.
-- \`CurrentAmount\` (decimal): Aktualny stan oszczędności (domyślnie 0).
+   - \`Id\` (int): Klucz główny.
+   - \`GoalName\` (string): Nazwa celu.
+   - \`TargetAmount\` (decimal): Docelowa kwota oszczędności.
+   - \`TargetDate\` (decimal): Docelowa kwota oszczędności.
+   - \`CurrentAmount\` (decimal): Aktualny stan oszczędności (domyślnie 0).
 
 **Kontrolery**
 
 1\. CategoriesController
 
 - Metody:
-- \`Index\` (\[GET\]): Wyświetla listę wszystkich kategorii.
-- \`Create\` (\[GET, POST\]): Dodawanie nowych kategorii.
-- \`Edit\` (\[GET, POST\]): Edycja istniejącej kategorii.
-- \`Delete\` (\[POST\]): Usuwanie kategorii.
+   - \`Index\` (\[GET\]): Wyświetla listę wszystkich kategorii.
+   - \`Create\` (\[GET, POST\]): Dodawanie nowych kategorii.
+   - \`Edit\` (\[GET, POST\]): Edycja istniejącej kategorii.
+   - \`Delete\` (\[POST\]): Usuwanie kategorii.
 
 2\. TransactionsController
 
 - Metody:
-- \`Index\` (\[GET\]): Lista transakcji użytkownika z możliwością filtrowania według
-- \`Create\` (\[GET, POST\]): Dodawanie nowej transakcji z logiką dla kategorii “Oszczednosci”.
-- \`Edit\` (\[GET, POST\]): Edycja szczegółów transakcji z logiką dla kategorii “Oszczednosci”.
-- \`Delete\` (\[POST\]): Usuwanie transakcji.
+   - \`Index\` (\[GET\]): Lista transakcji użytkownika z możliwością filtrowania według
+   - \`Create\` (\[GET, POST\]): Dodawanie nowej transakcji z logiką dla kategorii “Oszczednosci”.
+   - \`Edit\` (\[GET, POST\]): Edycja szczegółów transakcji z logiką dla kategorii “Oszczednosci”.
+   - \`Delete\` (\[POST\]): Usuwanie transakcji.
 
 3\. SavingsGoalsController
 
 - Metody:
-- \`Index\` (\[GET\]): Lista celów oszczędnościowych.
-- \`Create\` (\[GET, POST\]): Dodawanie nowego celu.
-- \`Edit\` (\[GET, POST\]): Edycja istniejącego celu.
-- \`Delete\` (\[POST\]): Usuwanie celu.
+   - \`Index\` (\[GET\]): Lista celów oszczędnościowych.
+   - \`Create\` (\[GET, POST\]): Dodawanie nowego celu.
+   - \`Edit\` (\[GET, POST\]): Edycja istniejącego celu.
+   - \`Delete\` (\[POST\]): Usuwanie celu.
 
 4\. DashboardController
 
 - Metody:
-- \`Index\` (\[GET\]): Prezentacja podsumowania finansowego.
+   - \`Index\` (\[GET\]): Prezentacja podsumowania finansowego.
 
 
 
 ## Widoki i UI
 
-•	Strona główna: Strona wyświetlająca nazwę aplikacji oraz krótki opis czym ona jest. Prosty ekran logowania/rejestracji w prawym górnym rogu.
+- Strona główna: Strona wyświetlająca nazwę aplikacji oraz krótki opis czym ona jest. Prosty ekran logowania/rejestracji w prawym górnym rogu.
 
-•	Dashboard: Strona podsumowania, gdzie możemy wszystko w ładny i przejrzysty sposób monitorować.
+- Dashboard: Strona podsumowania, gdzie możemy wszystko w ładny i przejrzysty sposób monitorować.
 
-•	Widok transakcji: Historia transakcji z możliwością tworzenia, edytowania oraz ich usuwania.
+- Widok transakcji: Historia transakcji z możliwością tworzenia, edytowania oraz ich usuwania.
 
-•	Widok kategorii: Lista kategorii z ikonami z możliwością tworzenia, edytowania oraz ich usuwania.
+- Widok kategorii: Lista kategorii z ikonami z możliwością tworzenia, edytowania oraz ich usuwania.
 
-•	Widok celów oszczędnościowych: Szczegółowa lista celów oszczędnościowych z możliwością tworzenia, edytowania oraz ich usuwania.
+- Widok celów oszczędnościowych: Szczegółowa lista celów oszczędnościowych z możliwością tworzenia, edytowania oraz ich usuwania.
 
 
 ## Screeny z działania aplikacji
