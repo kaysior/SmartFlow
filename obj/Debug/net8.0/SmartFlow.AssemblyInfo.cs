@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3e2412803551764d7b4c916b4bf24119c38ee20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a32138fdc8bb814919e297f28e15177bc281e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -141,7 +141,6 @@ namespace SmartFlow.Controllers
 
             var userId = GetUserId();
 
-            // Pobieranie kategorii
             ViewData["CategoryTitleWithIcon"] = _context.Categories
                 .Where(c => c.userId == userId)
                 .Select(c => new SelectListItem
@@ -150,7 +149,6 @@ namespace SmartFlow.Controllers
                     Text = c.Title
                 }).ToList();
 
-            // Pobieranie celów oszczędnościowych
             ViewData["SavingsGoalList"] = _context.SavingsGoal
                 .Where(s => s.userId == userId)
                 .Select(s => new SelectListItem
@@ -177,14 +175,12 @@ namespace SmartFlow.Controllers
                 var userId = GetUserId();
                 transaction.userId = userId;
 
-                // Pobierz oryginalną transakcję z bazy
                 var originalTransaction = await _context.Transactions
                     .AsNoTracking()
                     .FirstOrDefaultAsync(t => t.Id == id && t.userId == userId);
 
                 if (originalTransaction == null) return NotFound();
 
-                // Jeśli transakcja była powiązana z celem oszczędnościowym, zaktualizuj jego CurrentAmount
                 if (originalTransaction.SavingsGoalId.HasValue)
                 {
                     var originalSavingsGoal = await _context.SavingsGoal.FindAsync(originalTransaction.SavingsGoalId.Value);
@@ -195,7 +191,6 @@ namespace SmartFlow.Controllers
                     }
                 }
 
-                // Zaktualizuj nową wartość CurrentAmount dla nowego lub tego samego celu oszczędnościowego
                 if (transaction.SavingsGoalId.HasValue)
                 {
                     var newSavingsGoal = await _context.SavingsGoal.FindAsync(transaction.SavingsGoalId.Value);
@@ -246,7 +241,6 @@ namespace SmartFlow.Controllers
 
             if (transaction == null) return NotFound();
 
-            // Odejmij kwotę transakcji od CurrentAmount celu oszczędnościowego, jeśli istnieje
             if (transaction.SavingsGoalId.HasValue && transaction.SavingsGoal != null)
             {
                 transaction.SavingsGoal.CurrentAmount -= transaction.Amount;

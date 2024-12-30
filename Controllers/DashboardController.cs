@@ -23,19 +23,19 @@ namespace SmartFlow
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             List<Transaction> SelectedTransactions = await _context.Transactions
-                .Include(t => t.Category) // Załaduj kategorię
+                .Include(t => t.Category)
                 .Where(y => (y.Date >= StartDate && y.Date <= EndDate) && y.userId == userId)
                 .ToListAsync();
 
             // Calculate Total Income Last 7 Days
             int TotalIncome = await _context.Transactions
-                .Where(i => i.Type == "Income" && i.userId == userId) // Bezpośrednio z Transaction
+                .Where(i => i.Type == "Income" && i.userId == userId) 
                 .SumAsync(i => i.Amount);
             ViewBag.TotalIncome = TotalIncome.ToString("C0");
 
             // Calculate Total Expense Last 7 Days
             int TotalExpense = await _context.Transactions
-                .Where(i => i.Type == "Expense" && i.userId == userId) // Bezpośrednio z Transaction
+                .Where(i => i.Type == "Expense" && i.userId == userId) 
                 .SumAsync(i => i.Amount);
             ViewBag.TotalExpense = TotalExpense.ToString("C0");
 
@@ -45,7 +45,7 @@ namespace SmartFlow
 
             // Recent 5 Transactions
             ViewBag.RecentTransactions = await _context.Transactions
-                .Include(i => i.Category) // Załaduj kategorię
+                .Include(i => i.Category)
                 .Where(i => i.userId == userId)
                 .OrderByDescending(i => i.Date)
                 .Take(5)

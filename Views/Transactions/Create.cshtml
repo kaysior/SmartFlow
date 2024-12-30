@@ -79,31 +79,26 @@
             const categoryIdInput = document.getElementById("CategoryId");
             const savingsGoalSection = document.getElementById("SavingsGoalSection");
 
-            // Funkcja do obsługi kliknięcia przycisków kategorii
             iconButtons.forEach(button => {
                 button.addEventListener("click", function () {
-                    // Zaznacz wybrany przycisk
                     iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
                     this.classList.add("btn-primary");
 
-                    // Ustaw wartość ukrytego pola CategoryId
                     const categoryId = this.dataset.categoryId;
                     const categoryName = this.dataset.categoryName.toLowerCase();
 
                     categoryIdInput.value = categoryId;
 
-                    // Jeśli wybrano kategorię "Oszczędności", pokaż pole celu oszczędnościowego
                     if (categoryName.includes("oszczednosci")) {
                         savingsGoalSection.style.display = "block";
                     } else {
                         savingsGoalSection.style.display = "none";
                         const savingsGoalSelect = document.getElementById("SavingsGoalId");
-                        if (savingsGoalSelect) savingsGoalSelect.value = ""; // Resetuj wartość
+                        if (savingsGoalSelect) savingsGoalSelect.value = "";
                     }
                 });
             });
 
-            // Sprawdzenie początkowego stanu (np. przy edycji)
             const initialCategoryId = categoryIdInput.value;
             if (initialCategoryId) {
                 const activeButton = [...iconButtons].find(btn => btn.dataset.categoryId === initialCategoryId);
