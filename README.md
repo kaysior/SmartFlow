@@ -168,7 +168,7 @@ Screeny z działania aplikacji
 Strona główna
 
  
-![Obraz1](Documentation\documentation_images/1.png)
+![Obraz1](https://raw.githubusercontent.com/kaysior/SmartFlow/refs/heads/develop/Documentation/documentation_images/1.png)
 
 
 Ekran rejestracji
