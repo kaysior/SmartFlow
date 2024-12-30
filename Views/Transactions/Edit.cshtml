@@ -67,7 +67,6 @@
             <div id="savingsGoalContainer" class="form-group mb-3" style="display: none;">
                 <label class="form-label">Cel oszczędnościowy</label>
                 <select asp-for="SavingsGoalId" class="form-control">
-                    <option value="">-- Wybierz cel oszczędnościowy --</option>
                     @foreach (var goal in ViewData["SavingsGoalList"] as List<SelectListItem>)
                     {
                         <option value="@goal.Value" selected="@(goal.Value == Model.SavingsGoalId.ToString() ? "selected" : null)">@goal.Text</option>

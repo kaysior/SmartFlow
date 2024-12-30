@@ -22,11 +22,11 @@ footer {
     background-color: transparent; /* Usuniêcie t³a */
     color: #fff; /* Kolor tekstu */
     padding: 10px 0; /* Dystans wewnêtrzny w stopce */
-    text-align: center; /* Wyœrodkowanie tekstu */
-    width: 100%; /* Stopka ma pe³n¹ szerokoœæ kontenera */
-    position: absolute;
+    width: calc(100% - 250px); /* Uwzglêdnij margines na pasek boczny */
+    position: fixed; /* Zmieniono z absolute na fixed */
     bottom: 0;
-    left: 0; /* Wyrównanie do lewej */
+    left: 250px; /* Dopasowanie do szerokoœci paska bocznego */
+    text-align: center; /* Wyœrodkowanie tekstu */
 }
 
 /* Nawigacja */
