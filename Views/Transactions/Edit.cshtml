@@ -93,14 +93,12 @@
             const hiddenInput = document.getElementById("selectedCategoryId");
             const savingsGoalContainer = document.getElementById("savingsGoalContainer");
 
-            // Obsługa wyboru kategorii
             iconButtons.forEach(button => {
                 button.addEventListener("click", function () {
                     iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
                     this.classList.add("btn-primary");
                     hiddenInput.value = this.dataset.categoryId;
 
-                    // Pokaż/ukryj cel oszczędnościowy
                     if (this.textContent.includes("Oszczednosci")) {
                         savingsGoalContainer.style.display = "block";
                     } else {
@@ -109,7 +107,6 @@
                 });
             });
 
-            // Ustawienie wybranego celu oszczędnościowego przy edycji
             const currentCategoryId = hiddenInput.value;
             if (currentCategoryId) {
                 const activeButton = [...iconButtons].find(btn => btn.dataset.categoryId === currentCategoryId);

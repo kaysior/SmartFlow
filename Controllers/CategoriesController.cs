@@ -60,7 +60,7 @@ namespace SmartFlow.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CategoryId,Title,Icon,Type")] Category category)
         {
-            Console.WriteLine(category);  // Debugging purpose - shows category data in the console.
+            Console.WriteLine(category);
 
             if (ModelState.IsValid)
             {

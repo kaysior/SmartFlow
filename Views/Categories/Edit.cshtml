@@ -57,7 +57,6 @@
             const iconButtons = document.querySelectorAll(".icon-btn");
             const iconInput = document.getElementById("iconInput");
 
-            // Zaznaczenie ikony po kliknięciu
             iconButtons.forEach(button => {
                 button.addEventListener("click", function () {
                     iconButtons.forEach(btn => btn.classList.remove("btn-primary"));
@@ -66,7 +65,6 @@
                 });
             });
 
-            // Ustawienie aktywnej ikony, jeśli już wybrana
             const currentIcon = iconInput.value;
             if (currentIcon) {
                 const activeButton = [...iconButtons].find(btn => btn.dataset.icon === currentIcon);
